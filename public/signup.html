@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sign Up</title><link rel="stylesheet" href="/style.css"></head>
+<body><div class="card">
+  <div class="lock">🔒 Secured with HTTPS/TLS</div>
+  <h1>Create account</h1><p class="sub">Email is AES-encrypted; password is bcrypt-hashed.</p>
+  <form id="f" novalidate>
+    <label for="email">Email</label><input id="email" type="email" autocomplete="email" required>
+    <label for="password">Password (min 8 chars)</label><input id="password" type="password" autocomplete="new-password" minlength="8" required>
+    <button type="submit">Sign up</button>
+  </form>
+  <div id="msg" class="msg"></div>
+  <div class="link">Already registered? <a href="/login.html">Log in</a></div>
+</div><script src="/signup.js"></script></body></html>
